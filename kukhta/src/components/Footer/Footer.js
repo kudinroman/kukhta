@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import logoSavarez from "../../assets/images/logoSavarez.jpg";
-import vk from "../../assets/images/vk-24.png";
-import fb from "../../assets/images/fb-24.png";
-import instagram from "../../assets/images/instagram-24.png";
-import youtube from "../../assets/images/youtube-24.png";
+import vk from "../../assets/images/social/vk-24.png";
+import fb from "../../assets/images/social/fb-24.png";
+import instagram from "../../assets/images/social/instagram-24.png";
+import youtube from "../../assets/images/social/youtube-24.png";
 
 class Footer extends Component {
   render() {
@@ -24,7 +24,7 @@ class Footer extends Component {
 
     return (
       <footer className="bg-gray-200">
-        <div className="text-center w-11/12 md:w-3/5 mx-auto py-5">
+        <div className="text-center mx-4 lg:mx-auto lg:w-3/5 mx-auto py-5">
           <div className="flex justify-between">
             <div>
               <img
@@ -35,7 +35,7 @@ class Footer extends Component {
               />
             </div>
             <div className="text-right">
-              <p className="text-xs md:text-sm mb-2.5">
+              <p className="text-xs lg:text-sm mb-2.5">
                 <a
                   href="mailto:pavelkukhta@gmail.com"
                   className="hover:underline"

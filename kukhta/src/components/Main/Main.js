@@ -8,7 +8,7 @@ class Main extends Component {
     const componentName = `${lang}${menu}`;
 
     return (
-      <main className="w-11/12 md:w-3/5 mx-auto relative md:flex flex-grow font-openSans">
+      <main className="lg:w-3/5 mx-4 lg:mx-auto relative lg:flex flex-grow font-openSans">
         <Menu
           lang={lang}
           setMenu={setMenu}

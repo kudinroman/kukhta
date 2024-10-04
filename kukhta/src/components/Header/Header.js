@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Header.css";
 import menu from "../../assets/images/menu.svg";
 
 class Header extends Component {
@@ -18,27 +17,27 @@ class Header extends Component {
     const active = (l) => (l === lang ? "bg-gray-300 text-white" : "");
 
     return (
-      <header className="text-center w-11/12 md:w-3/5 mx-auto pb-4 mt-12 md:mt-4 md:relative border-solid border-b border-gray-200">
-        <div className="absolute top-3 left-4 md:hidden">
+      <header className="text-center mx-4 lg:mx-auto lg:w-3/5 mx-auto pb-4 mt-12 lg:mt-4 lg:relative border-solid border-b border-gray-200">
+        <div className="absolute top-4 left-4 w-8 lg:hidden">
           <img src={menu} alt="menu" onClick={menuTogglePopup} />
         </div>
-        <div className="absolute top-3 right-4 md:top-5 md:right-0">
+        <div className="absolute top-5 right-5 lg:top-5 lg:right-0">
           <button
             onClick={() => setLang("ru")}
-            className={`text-sm px-2 py-1 md:px-3 md:px-2 mr-1 ${active("ru")}`}
+            className={`text-sm px-2 py-1 lg:px-3 lg:px-2 mr-1 ${active("ru")}`}
           >
             рус
           </button>
           <button
             onClick={() => setLang("en")}
-            className={`text-sm px-2 py-1 md:px-3 md:px-2 ${active("en")}`}
+            className={`text-sm px-2 py-1 lg:px-3 lg:px-2 ${active("en")}`}
           >
             eng
           </button>
         </div>
         <div className="font-semibold">
-          <h1 className="text-4xl md:text-6xl">{data[lang].name}</h1>
-          <p className="text-base md:text-2xl">{data[lang].speciality}</p>
+          <h1 className="text-4xl lg:text-6xl">{data[lang].name}</h1>
+          <p className="text-base lg:text-2xl">{data[lang].speciality}</p>
         </div>
       </header>
     );
