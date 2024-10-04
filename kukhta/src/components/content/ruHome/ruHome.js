@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import mainPhoto from "../../../assets/images/main-photo.jpg";
 
 class RuHome extends Component {
   render() {
-    return <div>RuHome</div>;
+    return (
+      <div className="container md:w-1/2 mx-auto">
+        <img class="img" src={mainPhoto} alt="Павел Кухта" />
+        <p className="text-left mt-1">Фото: Слава Дудоладов</p>
+      </div>
+    );
   }
 }
 
