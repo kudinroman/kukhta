@@ -4,7 +4,7 @@ import biography1 from "../../../assets/images/biography-1.jpg";
 class EnBiography extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <p>
           <b>Pavel Kukhta</b> is one of the brightest guitarists in Europe. He
           was born in Grodno, where he got his first musical education at the

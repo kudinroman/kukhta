@@ -34,7 +34,7 @@ class Menu extends Component {
         className={`text-center ${this.props.isOpenMenu ? "fixed inset-0 flex items-center justify-center bg-gray-200/50 lg:block" : "hidden lg:block"} `}
       >
         <div
-          className="bg-white rounded-lg shadow-lg p-6 lg:pl-0 w-72 relative lg:shadow-none lg:text-xl font-semibold"
+          className="bg-white rounded-lg shadow-lg p-6 lg:p-0 lg:pr-8 relative lg:shadow-none lg:text-xl font-semibold"
           ref={this.wrapperRef}
         >
           <button
@@ -43,11 +43,11 @@ class Menu extends Component {
           >
             ×
           </button>
-          <nav className="lg:mt-4">
+          <nav className="lg:mt-6">
             <ul>
               {this.data[this.props.lang]?.map((item, index) => (
                 <li
-                  className={`py-1 mx-2 lg:mx-0 hover:bg-gray-400 hover:text-white transition-transform cursor-pointer ${capitalizeFirstLetter(this.data.en[index]) === this.props.menu ? "bg-gray-200 text-black" : ""}`}
+                  className={`py-1 mx-2 lg:mx-0 px-8 hover:bg-gray-400 hover:text-white transition-transform cursor-pointer ${capitalizeFirstLetter(this.data.en[index]) === this.props.menu ? "bg-gray-200 text-black" : ""}`}
                 >
                   <p
                     onClick={() => {

@@ -4,7 +4,7 @@ import contact from "../../../assets/images/contact.jpg";
 class RuContact extends Component {
   render() {
     return (
-      <div class="container">
+      <div>
         <p className="md:text-base lg:text-lg !mb-4">
           <span className="mr-2 text-sm md:text-base lg:text-lg">
             E-mail address:
@@ -18,7 +18,7 @@ class RuContact extends Component {
             pavelkukhta@gmail.com
           </a>
         </p>
-        <img class="contact_img" src={contact} alt="kukhta" />
+        <img src={contact} alt="kukhta" />
       </div>
     );
   }

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  h2 {
+    @apply font-semibold text-xl md:text-2xl mb-3;
+  }
+
   h3 {
     @apply font-semibold;
   }
@@ -14,7 +18,7 @@
   }
 
   .container {
-    @apply text-xs md:text-sm mb-8 md:mt-7;
+    @apply text-xs md:text-sm mb-8 mt-4 md:mt-7;
   }
 
   .container p {

@@ -4,7 +4,7 @@ import contact from "../../../assets/images/contact.jpg";
 class EnContact extends Component {
   render() {
     return (
-      <div class="container">
+      <div>
         <p className="md:text-base lg:text-lg !mb-4">
           <span className="mr-2">E-mail address:</span>
           <a
@@ -16,7 +16,7 @@ class EnContact extends Component {
             pavelkukhta@gmail.com
           </a>
         </p>
-        <img class="contact_img" src={contact} alt="kukhta" />
+        <img src={contact} alt="kukhta" />
       </div>
     );
   }

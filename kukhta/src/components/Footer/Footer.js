@@ -28,7 +28,7 @@ class Footer extends Component {
           <div className="flex justify-between">
             <div>
               <img
-                class="logo_savarez"
+                className="logo_savarez"
                 src={logoSavarez}
                 alt="Savarez"
                 width="80"

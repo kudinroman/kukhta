@@ -4,7 +4,7 @@ import PhotoSlider from "../PhotoSlider";
 class RuGallery extends Component {
   render() {
     return (
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <PhotoSlider />
       </div>
     );

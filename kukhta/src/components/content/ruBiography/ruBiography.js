@@ -4,7 +4,7 @@ import biography1 from "../../../assets/images/biography-1.jpg";
 class RuBiography extends Component {
   render() {
     return (
-      <div class="container">
+      <div>
         <p>
           <b>Павел Кухта</b> – один из ярчайших гитаристов в Европе. Родился в
           Гродно (Беларусь). Там он получил первое музыкальное образование - в
