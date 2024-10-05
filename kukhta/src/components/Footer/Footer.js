@@ -24,7 +24,7 @@ class Footer extends Component {
 
     return (
       <footer className="bg-gray-200">
-        <div className="text-center mx-4 lg:mx-auto lg:w-3/5 mx-auto py-5">
+        <div className="text-center mx-4 lg:mx-auto lg:w-3/5 py-5">
           <div className="flex justify-between">
             <div>
               <img

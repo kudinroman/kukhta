@@ -17,20 +17,20 @@ class Header extends Component {
     const active = (l) => (l === lang ? "bg-gray-300 text-white" : "");
 
     return (
-      <header className="text-center mx-4 lg:mx-auto lg:w-3/5 mx-auto pb-4 mt-12 lg:mt-4 lg:relative border-solid border-b border-gray-200">
+      <header className="text-center mx-4 lg:mx-auto lg:w-3/5 pb-4 mt-12 lg:mt-4 lg:relative border-solid border-b border-gray-200">
         <div className="absolute top-4 left-4 w-8 lg:hidden">
           <img src={menu} alt="menu" onClick={menuTogglePopup} />
         </div>
-        <div className="absolute top-5 right-5 lg:top-5 lg:right-0">
+        <div className="absolute top-5 right-5 lg:top-5 lg:right-0 font-semibold text-sm md:text-base">
           <button
             onClick={() => setLang("ru")}
-            className={`text-sm px-2 py-1 lg:px-3 lg:px-2 mr-1 ${active("ru")}`}
+            className={`px-2 py-1 lg:px-3 mr-1 ${active("ru")}`}
           >
             рус
           </button>
           <button
             onClick={() => setLang("en")}
-            className={`text-sm px-2 py-1 lg:px-3 lg:px-2 ${active("en")}`}
+            className={`px-2 py-1 lg:px-3 ${active("en")}`}
           >
             eng
           </button>
