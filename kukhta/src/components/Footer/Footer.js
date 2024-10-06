@@ -45,7 +45,7 @@ class Footer extends Component {
               </p>
               <div className="flex gap-2 justify-end">
                 {Object.entries(social).map(([key, value]) => (
-                  <a href={value} target="_blank" rel="noreferrer">
+                  <a href={value} target="_blank" rel="noreferrer" key={key}>
                     <img
                       src={icons[key]}
                       alt={key}

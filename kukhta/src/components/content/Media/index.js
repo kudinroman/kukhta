@@ -24,14 +24,15 @@ class Media extends Component {
     ];
 
     return (
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
         {urls.map((url) => (
           <iframe
             title={url}
             className="w-full mb-4"
             src={url}
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            key={url}
+            allowFullScreen
           ></iframe>
         ))}
       </div>

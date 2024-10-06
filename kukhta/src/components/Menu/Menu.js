@@ -39,7 +39,7 @@ class Menu extends Component {
         >
           <button
             onClick={() => this.props.setIsOpenMenu(false)}
-            class="text-gray-500 hover:text-gray-700 absolute top-2 right-4 text-2xl lg:hidden"
+            className="text-gray-500 hover:text-gray-700 absolute top-2 right-4 text-2xl lg:hidden"
           >
             ×
           </button>
@@ -48,6 +48,7 @@ class Menu extends Component {
               {this.data[getLangFromUrl()]?.map((item, index) => (
                 <li
                   className={`mx-2 lg:mx-0 hover:bg-gray-400 hover:text-white transition-transform cursor-pointer ${this.data.en[index] === getComponentFromUrl() ? "bg-gray-200 text-black" : ""}`}
+                  key={index}
                 >
                   <Link
                     className="block py-1 px-8"

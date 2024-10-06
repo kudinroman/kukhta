@@ -5,7 +5,7 @@ class RuHome extends Component {
   render() {
     return (
       <div className="md:w-1/2 mx-auto">
-        <img class="img" src={mainPhoto} alt="Павел Кухта" />
+        <img className="img" src={mainPhoto} alt="Павел Кухта" />
         <p className="text-left mt-1">Фото: Слава Дудоладов</p>
       </div>
     );
