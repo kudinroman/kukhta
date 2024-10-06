@@ -38,6 +38,15 @@ module.exports = {
         "sans-serif",
       ],
     },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 },
+      },
+    },
+    animation: {
+      fadeIn: "fadeIn 2.5s forwards",
+    },
   },
   plugins: [],
 };

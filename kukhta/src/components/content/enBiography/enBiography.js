@@ -69,10 +69,6 @@ class EnBiography extends Component {
           </li>
         </ul>
 
-        <p className="md:float-left md:mr-10 w-full md:w-1/2">
-          <img src={biography1} alt="kukhta" />
-        </p>
-
         <p className="pt-4 md:pt-0">
           Also Pavel is the only Belarusian who got top prizes at the most
           prestigious international guitar competitions, such as:
@@ -162,12 +158,26 @@ class EnBiography extends Component {
               2014 – Sad Ghosts of Vanished Castles, a suite for the Belarusian
               dulcimer and guitar;
             </p>
+          </li>
+          <li>
             <p>2015 – Preludio and Fuga (dedicated to Pavel Kukhta);</p>
+          </li>
+          <li>
             <p>2017 – Charon, Concertino for guitar and strings;</p>
+          </li>
+          <li>
             <p>2018 – Rodin (dedicated to Pavel Kukhta);</p>
+          </li>
+          <li>
             <p>2019 – Biblical Motifs (second edition);</p>
+          </li>
+          <li>
             <p>2023 – Distant Bells (dedicated to Pavel Kukhta);</p>
+          </li>
+          <li>
             <p>2024 – Bruegel-Suite (dedicated to Pavel Kukhta);</p>
+          </li>
+          <li>
             <p>2024 – Da Lantano for guitar and strings;</p>
           </li>
         </ul>

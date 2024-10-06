@@ -30,7 +30,7 @@ const PhotoGallery = () => {
             key={index}
             src={photo}
             alt={`Thumbnail ${index}`}
-            className="cursor-pointer rounded-lg"
+            className="cursor-pointer rounded-lg animate-fadeIn"
             onClick={() => openSlider(index)}
           />
         ))}

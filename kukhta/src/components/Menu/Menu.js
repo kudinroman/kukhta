@@ -9,8 +9,8 @@ class Menu extends Component {
     this.wrapperRef = React.createRef();
     this.handleClickOutside = this.handleClickOutside.bind(this);
     this.data = {
-      en: ["home", "biography", "gallery", "media", "recordings", "contact"],
-      ru: ["главная", "биография", "фото", "видео", "записи", "контакты"],
+      en: ["home", "biography", "gallery", "media", "recordings"],
+      ru: ["главная", "биография", "фото", "видео", "записи"],
     };
   }
 
@@ -31,7 +31,7 @@ class Menu extends Component {
   render() {
     return (
       <div
-        className={`text-center ${this.props.isOpenMenu ? "fixed inset-0 flex items-center justify-center bg-gray-200/50 lg:block" : "hidden lg:block"} `}
+        className={`text-center ${this.props.isOpenMenu ? "fixed inset-0 flex items-center justify-center bg-gray-200/50 lg:block z-10" : "hidden lg:block"} `}
       >
         <div
           className="bg-white rounded-lg shadow-lg p-6 lg:p-0 lg:pr-8 relative lg:shadow-none lg:text-xl font-semibold"

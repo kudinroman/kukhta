@@ -8,7 +8,7 @@ class Header extends Component {
     const { menuTogglePopup } = this.props;
     const data = {
       en: {
-        name: "Kukhta Pavel",
+        name: "Pavel Kukhta",
         speciality: "Classical guitar",
       },
       ru: {

@@ -11,7 +11,7 @@ class Main extends Component {
       <main className="lg:w-3/5 mx-4 lg:mx-auto relative lg:flex flex-grow">
         <Menu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 
-        <div className="lg:w-3/4 container font-openSans">
+        <div className="container font-openSans">
           <Routes>
             <Route path="/" element={<Navigate to="/en/home" />} />
             <Route path="en">
@@ -21,7 +21,6 @@ class Main extends Component {
               <Route path="gallery" element={<content.EnGallery />} />
               <Route path="media" element={<content.EnMedia />} />
               <Route path="recordings" element={<content.EnRecordings />} />
-              <Route path="contact" element={<content.EnContact />} />
             </Route>
             <Route path="ru">
               <Route index element={<Navigate to="/ru/home" />} />
@@ -30,7 +29,6 @@ class Main extends Component {
               <Route path="gallery" element={<content.RuGallery />} />
               <Route path="media" element={<content.RuMedia />} />
               <Route path="recordings" element={<content.RuRecordings />} />
-              <Route path="contact" element={<content.RuContact />} />
             </Route>
           </Routes>
         </div>
