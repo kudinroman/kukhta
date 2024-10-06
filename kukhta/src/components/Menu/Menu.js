@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { capitalizeFirstLetter } from "../../utils";
+import { Link } from "react-router-dom";
+import { getLangFromUrl, getComponentFromUrl } from "../../utils";
 
 class Menu extends Component {
   constructor(props) {
     super(props);
-    console.log("props", props);
 
     this.wrapperRef = React.createRef();
     this.handleClickOutside = this.handleClickOutside.bind(this);
@@ -45,20 +45,17 @@ class Menu extends Component {
           </button>
           <nav className="lg:mt-6">
             <ul>
-              {this.data[this.props.lang]?.map((item, index) => (
+              {this.data[getLangFromUrl()]?.map((item, index) => (
                 <li
-                  className={`py-1 mx-2 lg:mx-0 px-8 hover:bg-gray-400 hover:text-white transition-transform cursor-pointer ${capitalizeFirstLetter(this.data.en[index]) === this.props.menu ? "bg-gray-200 text-black" : ""}`}
+                  className={`mx-2 lg:mx-0 hover:bg-gray-400 hover:text-white transition-transform cursor-pointer ${this.data.en[index] === getComponentFromUrl() ? "bg-gray-200 text-black" : ""}`}
                 >
-                  <p
-                    onClick={() => {
-                      this.props.setIsOpenMenu(false);
-                      this.props.setMenu(
-                        capitalizeFirstLetter(this.data.en[index]),
-                      );
-                    }}
+                  <Link
+                    className="block py-1 px-8"
+                    to={`/${getLangFromUrl()}/${this.data.en[index]}`}
+                    onClick={() => this.props.setIsOpenMenu(false)}
                   >
                     {item.toUpperCase()}
-                  </p>
+                  </Link>
                 </li>
               ))}
             </ul>

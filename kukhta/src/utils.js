@@ -18,3 +18,14 @@ export function importImagePathsFromFolder(folderName) {
   }
   return context.keys().map(context);
 }
+
+export const getPathByLang = (lang) => {
+  const currentPath = window.location.pathname.split("/").slice(2).join("/");
+  return `/${lang}/${currentPath}`;
+};
+
+export const getLangFromUrl = () =>
+  window.location.pathname.split("/").filter((e) => e)[0];
+
+export const getComponentFromUrl = () =>
+  window.location.pathname.split("/").filter((e) => e)[1];
